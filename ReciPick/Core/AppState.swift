@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 class AppState: ObservableObject {
-    @Published var isLoading: Bool = false
+    @Published var isLoading: Bool = false // this controls the loading state of the app.
 }

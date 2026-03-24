@@ -1,5 +1,5 @@
 //
-//  HorizontalChipListView.swift
+//  HomeDietaryAttributeChipListView.swift
 //  ReciPick
 //
 //  Created by Anthony Tan on 3/21/26.

@@ -26,7 +26,8 @@ struct HomeView: View {
         .background(Color(uiColor: .secondarySystemBackground))
         .onAppear {
             viewModel.setAppState(appState)
-            // handling of filters
+            
+            // Handle apply filter button
             filterViewModel.applyFilters = { query in
                 Task {
                     await viewModel.searchFilter(query: query)
@@ -61,6 +62,8 @@ struct HomeView: View {
                 VStack(alignment: .leading, spacing: 14) {
                     NavigationBarView(title: "ReciPick")
                     
+                    
+                    // search bar
                     SearchBarView(
                         searchText: $viewModel.searchKey,
                         hasFilter: $viewModel.hasFilter,
@@ -73,26 +76,27 @@ struct HomeView: View {
                     
                     Divider().background(Color.black)
                     
-                    // Dietary Chips
+                    // dietary attribute chips
                     HomeDietaryAttributeChipListView(
                         dietaryAttributes: viewModel.dietaryAttributes,
                         selectedAttribute: $viewModel.selectedAttribute
                     )
                     
-                    // Featured List
+                    // featured recipe list
                     if !viewModel.featuredRecipes.isEmpty {
                         HorizontalFeaturedListView(featuredRecipes: viewModel.featuredRecipes) { recipe in
                             path.append(recipe)
                         }
                     }
                     
-                    // All Recipe
+                    // all recipe (including featured recipes)
                     if !viewModel.recipes.isEmpty {
                         AllRecipeListView(allRecipes: viewModel.recipes) { recipe in
                             path.append(recipe)
                         }
                     }
                     
+                    // empty state
                     if viewModel.featuredRecipes.isEmpty && viewModel.recipes.isEmpty {
                         EmptyView(text: "No results found")
                             .frame(maxWidth: .infinity)

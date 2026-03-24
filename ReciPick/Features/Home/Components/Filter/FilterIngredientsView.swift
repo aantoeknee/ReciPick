@@ -13,7 +13,8 @@ struct FilterIngredientsView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            // input field
+            
+            // ingredient input field
             FilterIngredientInputView { ingredient in
                 selectedIngredients.append(ingredient)
             }

@@ -8,6 +8,8 @@
 import Foundation
 import Combine
 
+
+// If you plan to use actual API, just conform to this protocol
 protocol RecipeRepositoryProtocol {
     func loadRecipes() async throws -> [Recipe]
     func searchRecipes(query: FilterSearchQueryModel) async throws -> [Recipe]
@@ -26,6 +28,9 @@ class RecipeRepository: RecipeRepositoryProtocol {
 
         return response.recipes
     }
+    
+    
+    // Filtering order: Attribute -> isVegetarian -> Servings -> Ingredients -> Search Key
     
     func searchRecipes(query: FilterSearchQueryModel) async throws -> [Recipe] {
         try? await Task.sleep(for: .milliseconds(100)) // to mimic api call

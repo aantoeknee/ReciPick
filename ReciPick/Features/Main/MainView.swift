@@ -19,6 +19,10 @@ struct MainView: View {
         NavigationStack(path: $path) {
             VStack(spacing: 0) {
                 ZStack {
+                    /*
+                     mimic behavior of native ios tab bar.
+                     use opacity instead of hiding to prevent view from always calling "didAppear" when selected.
+                     */
                     HomeView(path: $path).opacity(getOpacity(.home))
                     SavedRecipeView(path: $path).opacity(getOpacity(.saved))
                 }
@@ -32,7 +36,7 @@ struct MainView: View {
                 }
             }
             .navigationDestination(for: Recipe.self) { recipe in
-                RecipeDetailView(recipe: recipe)
+                RecipeDetailView(viewModel: RecipeDetailViewModel(recipe: recipe))
                     .environmentObject(savedRecipeViewModel)
             }
             .environmentObject(appState)

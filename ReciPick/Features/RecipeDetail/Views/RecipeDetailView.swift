@@ -11,10 +11,9 @@ import SwiftUI
 struct RecipeDetailView: View {
     
     @EnvironmentObject var savedRecipeViewModel: SavedRecipeViewModel
+    @ObservedObject var viewModel: RecipeDetailViewModel
     
     @State var imageHeight: CGFloat = 300.0
-    
-    let recipe: Recipe
     
     var body: some View {
         content
@@ -24,10 +23,10 @@ struct RecipeDetailView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        savedRecipeViewModel.toggleFavorite(recipe)
+                        savedRecipeViewModel.toggleFavorite(viewModel.recipe)
                     } label: {
-                        Image(systemName: savedRecipeViewModel.isFavorited(recipe) ? "heart.fill": "heart" )
-                            .foregroundStyle(savedRecipeViewModel.isFavorited(recipe) ? .red : .black)
+                        Image(systemName: savedRecipeViewModel.isSaved(viewModel.recipe) ? "heart.fill": "heart" )
+                            .foregroundStyle(savedRecipeViewModel.isSaved(viewModel.recipe) ? .red : .black)
                     }
                 }
             }
@@ -40,7 +39,7 @@ struct RecipeDetailView: View {
             VStack(alignment: .leading, spacing: 18) {
                 // Header Image
                 GeometryReader { geo in
-                    AsyncImage(url: URL(string: recipe.imageUrl)) { image in
+                    AsyncImage(url: URL(string: viewModel.recipe.imageUrl)) { image in
                         image.resizable().scaledToFill()
                     } placeholder: {
                         ProgressView()
@@ -59,25 +58,25 @@ struct RecipeDetailView: View {
                 .frame(maxWidth: .infinity, minHeight: imageHeight)
                 
                 // Dietary Attribute Chips
-                DietaryAttributeListView(dietaryAttributes: recipe.dietaryAttributes)
+                DietaryAttributeListView(dietaryAttributes: viewModel.recipe.dietaryAttributes)
                 
                 // Title & Description
                 VStack(alignment: .leading, spacing: 8) {
-                    Text(recipe.title)
+                    Text(viewModel.recipe.title)
                         .font(.system(size: 40, weight: .bold))
                         .foregroundStyle(.primary)
-                    Text(recipe.description)
+                    Text(viewModel.recipe.description)
                         .foregroundStyle(.secondary)
                     
                     // # of servings, ingredients and instructions
-                    RecipeAmountsSectionView(recipe: recipe)
+                    RecipeAmountsSectionView(recipe: viewModel.recipe)
                     
                     // ingredients
-                    RecipeIngredientsSectionView(recipe: recipe)
+                    RecipeIngredientsSectionView(recipe: viewModel.recipe)
                         .padding(.top, 10)
                     
                     // instructions
-                    RecipeInstructionsSectionView(instructions: recipe.instructions)
+                    RecipeInstructionsSectionView(instructions: viewModel.recipe.instructions)
                         .padding(.top, 10)
                 }
                 .padding(.horizontal, 18)
@@ -88,7 +87,7 @@ struct RecipeDetailView: View {
 }
 
 #Preview {
-    RecipeDetailView(recipe: Recipe(
+    RecipeDetailView(viewModel: RecipeDetailViewModel(recipe: Recipe(
         id: .empty,
         title: "Pancake",
         description: "A light, colorful pasta loaded with seasonal vegetables and a bright lemon-garlic sauce.",
@@ -97,7 +96,7 @@ struct RecipeDetailView: View {
         imageUrl: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800",
         ingredients: [.init(name: "Milk", amount: "100g")],
         instructions: [],
-        dietaryAttributes: [.vegan, .vegetarian])
+        dietaryAttributes: [.vegan, .vegetarian]))
     )
     .environmentObject(SavedRecipeViewModel())
 }

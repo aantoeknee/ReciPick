@@ -16,26 +16,41 @@ struct FilterView: View {
     var body: some View {
         VStack {
             List {
+                // isVegetarian toggle
                 Section("Dietary") {
                     Toggle("Vegetarian Only", isOn: $viewModel.query.isVegetarian)
                 }
                 
+                
+                // min and max servings
                 Section("Servings") {
                     VStack(spacing: 20) {
-                        Stepper("Min: \(viewModel.query.minServings)", value: $viewModel.query.minServings, in: 1...10)
-                        Stepper("Max: \(viewModel.query.maxServings)", value: $viewModel.query.maxServings, in: viewModel.query.minServings...10)
-                        }
+                        Stepper(
+                            "Min: \(viewModel.query.minServings)",
+                            value: $viewModel.query.minServings,
+                            in: 1...10
+                        )
+                        Stepper(
+                            "Max: \(viewModel.query.maxServings)",
+                            value: $viewModel.query.maxServings,
+                            in: viewModel.query.minServings...10
+                        )
                     }
+                }
                 
+                // include/exclude ingredients
                 Section("Ingredients") {
                     FilterIngredientsView(selectedIngredients: $viewModel.query.ingredients)
                 }
                 
+                // include instruction when searching in search bar
                 Section("Instructions") {
                     Toggle("Search in steps", isOn: $viewModel.query.includeInstructionSearch)
                 }
             }
             
+            
+            // bottom buttons
             VStack {
                 Button {
                     viewModel.didTapApplyFilters()

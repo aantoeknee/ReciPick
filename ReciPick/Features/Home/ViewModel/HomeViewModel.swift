@@ -65,6 +65,9 @@ extension HomeViewModel {
         
         defer {
             appState?.isLoading = false
+            
+            // flag if recipes are already loaded for the first time
+            // this is to avoid .task in HomeView to always call loadRecipes.
             hasInitiallyLoaded = true
         }
         
@@ -84,10 +87,10 @@ extension HomeViewModel {
         var finalQuery = query
         finalQuery.searchText = searchKey
         
+        // assign current attribute as vegetarian if vegetarian is toggled in filter view.
         selectedAttribute = finalQuery.isVegetarian ? .vegetarian : query.attribute
         
         finalQuery.attribute = selectedAttribute
-        
         self.query = finalQuery
         
         appState?.isLoading = true
@@ -109,19 +112,27 @@ extension HomeViewModel {
 
 // MARK: - Private Functions
 extension HomeViewModel {
+    
+    // extract dietry attributes from retrieved recipes.
+    // this will be used on the horizontal dietary attribute chips.
     private func extractDietaryList() {
         let attributes = recipes.flatMap { recipe in
             recipe.dietaryAttributes
         }
-        dietaryAttributes = Array(Set(attributes)) // Add "All" category in the dietary attribute chips.
+        dietaryAttributes = Array(Set(attributes))
         dietaryAttributes = dietaryAttributes.sorted { $0.rawValue < $1.rawValue }
+        
+        // Add "All" category in the dietary attribute chips.
         dietaryAttributes.insert(.all, at: 0)
     }
     
+    
+    // extract feature recipes. this will be used on the horizontal featured list in HomeView.
     private func extractFeaturedRecipes() {
         featuredRecipes = recipes.filter { $0.isFeatured }
     }
     
+    // listener for change in dietary attribute chips
     private func initFilterListeners() {
         $selectedAttribute
             .receive(on: DispatchQueue.main)
