@@ -86,6 +86,9 @@ Added a `500ms` delay for both `loadRecipes` and `searchRecipes` function inside
 ### 4. Custom bottom tab bar and navigation bar
 A custom `BottomTabBarView` and `NavigationBarView` is used instead of the native one to allow full control over appearance and functions.
 
+### 4. Assets
+All icons are from [SF Symbols](https://developer.apple.com/sf-symbols/). No custom assets were added.
+
 ---
 ## Assumptions, Tradeoffs and Limitations
 
