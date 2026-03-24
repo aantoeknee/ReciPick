@@ -1,0 +1,424 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Pasta Primavera",
+      "description": "A light and colorful pasta dish loaded with fresh seasonal vegetables and tossed in a bright lemon-garlic olive oil sauce.",
+      "servings": 2,
+      "isFeatured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=800",
+      "dietaryAttributes": ["Vegetarian"],
+      "ingredients": [
+        { "name": "Penne pasta", "amount": "200g" },
+        { "name": "Cherry tomatoes", "amount": "1 cup" },
+        { "name": "Zucchini", "amount": "1 medium" },
+        { "name": "Garlic cloves", "amount": "3" },
+        { "name": "Olive oil", "amount": "2 tbsp" },
+        { "name": "Parmesan cheese", "amount": "40g" },
+        { "name": "Lemon", "amount": "1" },
+        { "name": "Fresh basil", "amount": "handful" }
+      ],
+      "instructions": [
+        "Boil a large pot of salted water and cook penne until al dente, about 10 minutes.",
+        "While pasta cooks, heat olive oil in a pan over medium heat and sauté minced garlic for 1 minute.",
+        "Add sliced zucchini and cherry tomatoes. Cook for 5 minutes until softened.",
+        "Drain pasta, reserving ½ cup of pasta water.",
+        "Toss pasta with vegetables, squeeze lemon juice, and add pasta water as needed.",
+        "Serve topped with grated parmesan and fresh basil."
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Chicken Curry",
+      "description": "A rich and aromatic Thai-inspired chicken curry simmered in creamy coconut milk with warming spices.",
+      "servings": 4,
+      "isFeatured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=800",
+      "dietaryAttributes": ["Gluten-Free", "Dairy-Free", "High Protein"],
+      "ingredients": [
+        { "name": "Chicken breast", "amount": "500g" },
+        { "name": "Coconut milk", "amount": "400ml" },
+        { "name": "Red curry paste", "amount": "2 tbsp" },
+        { "name": "Garlic cloves", "amount": "4" },
+        { "name": "Fresh ginger", "amount": "1 inch" },
+        { "name": "Fish sauce", "amount": "1 tbsp" },
+        { "name": "Brown sugar", "amount": "1 tsp" },
+        { "name": "Lime", "amount": "1" },
+        { "name": "Fresh coriander", "amount": "handful" }
+      ],
+      "instructions": [
+        "Cut chicken breast into bite-sized chunks and season with salt.",
+        "Heat oil in a large pan over medium-high heat. Sear chicken until golden, about 4 minutes. Set aside.",
+        "In the same pan, fry curry paste with minced garlic and ginger for 2 minutes until fragrant.",
+        "Pour in coconut milk and bring to a gentle simmer.",
+        "Return chicken to the pan. Add fish sauce and brown sugar. Simmer for 15 minutes.",
+        "Squeeze lime juice, garnish with fresh coriander, and serve with steamed rice."
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Greek Salad",
+      "description": "A crisp and refreshing classic Greek salad with briny olives, creamy feta, and a simple oregano dressing.",
+      "servings": 1,
+      "isFeatured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800",
+      "dietaryAttributes": ["Vegetarian", "Gluten-Free"],
+      "ingredients": [
+        { "name": "Roma tomatoes", "amount": "2" },
+        { "name": "Cucumber", "amount": "½" },
+        { "name": "Red onion", "amount": "¼" },
+        { "name": "Kalamata olives", "amount": "½ cup" },
+        { "name": "Feta cheese", "amount": "80g" },
+        { "name": "Olive oil", "amount": "2 tbsp" },
+        { "name": "Red wine vinegar", "amount": "1 tbsp" },
+        { "name": "Dried oregano", "amount": "1 tsp" }
+      ],
+      "instructions": [
+        "Chop tomatoes and cucumber into rough chunks.",
+        "Thinly slice red onion and add to a large bowl.",
+        "Add olives and toss everything with olive oil and red wine vinegar.",
+        "Season with salt, pepper, and dried oregano.",
+        "Top with a large block or crumbled feta cheese and serve immediately."
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Fluffy Pancakes",
+      "description": "Thick, golden, melt-in-your-mouth pancakes perfect for a lazy weekend breakfast.",
+      "servings": 3,
+      "isFeatured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800",
+      "dietaryAttributes": ["Vegetarian"],
+      "ingredients": [
+        { "name": "All-purpose flour", "amount": "200g" },
+        { "name": "Eggs", "amount": "2" },
+        { "name": "Milk", "amount": "180ml" },
+        { "name": "Baking powder", "amount": "2 tsp" },
+        { "name": "Sugar", "amount": "2 tbsp" },
+        { "name": "Butter", "amount": "2 tbsp" },
+        { "name": "Vanilla extract", "amount": "1 tsp" },
+        { "name": "Pinch of salt", "amount": "" }
+      ],
+      "instructions": [
+        "In a large bowl, whisk together flour, baking powder, sugar, and salt.",
+        "In a separate bowl, beat eggs with milk, melted butter, and vanilla.",
+        "Pour wet ingredients into dry and stir until just combined — lumps are fine, do not overmix.",
+        "Heat a non-stick pan over medium heat and lightly grease with butter.",
+        "Pour ¼ cup batter per pancake. Cook until bubbles form on surface, about 2 minutes, then flip.",
+        "Cook another 1 minute until golden. Serve with maple syrup and fresh berries."
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Lentil Soup",
+      "description": "A hearty, warming red lentil soup spiced with cumin and turmeric — filling, nutritious, and entirely plant-based.",
+      "servings": 4,
+      "isFeatured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1547592180-85f173990554?w=800",
+      "dietaryAttributes": ["Vegetarian", "Vegan", "Gluten-Free", "Dairy-Free", "High Protein"],
+      "ingredients": [
+        { "name": "Red lentils", "amount": "250g" },
+        { "name": "Vegetable stock", "amount": "1L" },
+        { "name": "Onion", "amount": "1 large" },
+        { "name": "Garlic cloves", "amount": "3" },
+        { "name": "Carrot", "amount": "2" },
+        { "name": "Canned tomatoes", "amount": "400g" },
+        { "name": "Ground cumin", "amount": "2 tsp" },
+        { "name": "Turmeric", "amount": "1 tsp" },
+        { "name": "Olive oil", "amount": "2 tbsp" },
+        { "name": "Lemon juice", "amount": "2 tbsp" }
+      ],
+      "instructions": [
+        "Heat olive oil in a large pot over medium heat. Sauté diced onion and carrot for 5 minutes.",
+        "Add minced garlic, cumin, and turmeric. Cook for 1 minute until fragrant.",
+        "Add rinsed lentils, canned tomatoes, and vegetable stock. Stir to combine.",
+        "Bring to a boil, then reduce heat and simmer for 25 minutes until lentils are soft.",
+        "Use an immersion blender to partially blend for a thick, creamy texture.",
+        "Stir in lemon juice, season with salt and pepper, and serve with crusty bread."
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Garlic Mushroom Risotto",
+      "description": "A creamy, restaurant-quality risotto packed with earthy mushrooms and finished with parmesan and fresh thyme.",
+      "servings": 2,
+      "isFeatured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=800",
+      "dietaryAttributes": ["Vegetarian", "Gluten-Free"],
+      "ingredients": [
+        { "name": "Arborio rice", "amount": "150g" },
+        { "name": "Mixed mushrooms", "amount": "250g" },
+        { "name": "Vegetable stock", "amount": "750ml" },
+        { "name": "White wine", "amount": "100ml" },
+        { "name": "Garlic cloves", "amount": "4" },
+        { "name": "Shallot", "amount": "1" },
+        { "name": "Parmesan cheese", "amount": "50g" },
+        { "name": "Butter", "amount": "2 tbsp" },
+        { "name": "Fresh thyme", "amount": "4 sprigs" }
+      ],
+      "instructions": [
+        "Warm vegetable stock in a saucepan over low heat — keep it warm throughout.",
+        "Sauté sliced mushrooms in butter over high heat until golden. Set aside.",
+        "In the same pan, soften diced shallot and garlic over medium heat, about 3 minutes.",
+        "Add arborio rice and toast for 1 minute, stirring constantly.",
+        "Pour in white wine and stir until absorbed.",
+        "Add warm stock one ladle at a time, stirring continuously and waiting for each ladle to absorb before adding the next — about 18 minutes total.",
+        "Stir in mushrooms, grated parmesan, and fresh thyme. Season and serve immediately."
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Beef Tacos",
+      "description": "Juicy seasoned ground beef in crispy taco shells topped with fresh salsa, sour cream, and melted cheese.",
+      "servings": 4,
+      "isFeatured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800",
+      "dietaryAttributes": ["High Protein"],
+      "ingredients": [
+        { "name": "Ground beef", "amount": "500g" },
+        { "name": "Taco shells", "amount": "8" },
+        { "name": "Cheddar cheese", "amount": "100g" },
+        { "name": "Sour cream", "amount": "4 tbsp" },
+        { "name": "Tomato", "amount": "2" },
+        { "name": "Lettuce", "amount": "1 cup" },
+        { "name": "Onion", "amount": "1" },
+        { "name": "Taco seasoning", "amount": "2 tbsp" },
+        { "name": "Lime", "amount": "1" }
+      ],
+      "instructions": [
+        "Brown ground beef in a pan over medium-high heat, breaking it apart as it cooks.",
+        "Drain excess fat, then add taco seasoning and ¼ cup water. Stir and simmer for 3 minutes.",
+        "Dice tomatoes and onion. Shred lettuce. Grate cheese.",
+        "Warm taco shells in oven at 180°C for 3 minutes.",
+        "Fill shells with beef, top with cheese, lettuce, tomato, and sour cream.",
+        "Squeeze lime juice over the top and serve immediately."
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Avocado Toast",
+      "description": "Creamy smashed avocado on toasted sourdough with poached eggs, chilli flakes, and a drizzle of olive oil.",
+      "servings": 2,
+      "isFeatured": false,
+      "imageUrl": "https://www.giallozafferano.com/images/273-27388/Avocado-toast_650x433_wm.jpg",
+      "dietaryAttributes": ["Vegetarian", "Dairy-Free"],
+      "ingredients": [
+        { "name": "Sourdough bread", "amount": "4 slices" },
+        { "name": "Avocado", "amount": "2" },
+        { "name": "Eggs", "amount": "2" },
+        { "name": "Lemon juice", "amount": "1 tbsp" },
+        { "name": "Chilli flakes", "amount": "pinch" },
+        { "name": "Olive oil", "amount": "1 tbsp" },
+        { "name": "Salt", "amount": "to taste" },
+        { "name": "Black pepper", "amount": "to taste" }
+      ],
+      "instructions": [
+        "Toast sourdough slices until golden and crispy.",
+        "Scoop avocado flesh into a bowl, add lemon juice, salt, and pepper. Mash with a fork.",
+        "Bring a pot of water to a gentle simmer. Add a splash of vinegar.",
+        "Crack each egg into a small bowl, then gently slide into the simmering water. Poach for 3 minutes.",
+        "Spread mashed avocado generously over toast.",
+        "Top with poached egg, chilli flakes, and a drizzle of olive oil. Serve immediately."
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Mango Smoothie Bowl",
+      "description": "A vibrant frozen mango smoothie bowl topped with granola, fresh berries, and coconut flakes for a refreshing breakfast.",
+      "servings": 1,
+      "isFeatured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1494597564530-871f2b93ac55?w=800",
+      "dietaryAttributes": ["Vegan", "Gluten-Free", "Dairy-Free"],
+      "ingredients": [
+        { "name": "Frozen mango", "amount": "2 cups" },
+        { "name": "Banana", "amount": "1" },
+        { "name": "Coconut milk", "amount": "¼ cup" },
+        { "name": "Granola", "amount": "¼ cup" },
+        { "name": "Fresh strawberries", "amount": "handful" },
+        { "name": "Blueberries", "amount": "handful" },
+        { "name": "Coconut flakes", "amount": "2 tbsp" },
+        { "name": "Chia seeds", "amount": "1 tsp" }
+      ],
+      "instructions": [
+        "Blend frozen mango, banana, and coconut milk until thick and smooth.",
+        "Pour into a bowl — the consistency should be thicker than a regular smoothie.",
+        "Top with granola, sliced strawberries, and blueberries.",
+        "Sprinkle coconut flakes and chia seeds over the top.",
+        "Serve immediately before it melts."
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Salmon Teriyaki",
+      "description": "Glazed salmon fillets in a sweet and savory homemade teriyaki sauce, served over steamed jasmine rice.",
+      "servings": 2,
+      "isFeatured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800",
+      "dietaryAttributes": ["Gluten-Free", "Dairy-Free", "High Protein"],
+      "ingredients": [
+        { "name": "Salmon fillets", "amount": "2" },
+        { "name": "Soy sauce", "amount": "3 tbsp" },
+        { "name": "Honey", "amount": "2 tbsp" },
+        { "name": "Sesame oil", "amount": "1 tbsp" },
+        { "name": "Garlic cloves", "amount": "2" },
+        { "name": "Fresh ginger", "amount": "1 tsp" },
+        { "name": "Jasmine rice", "amount": "150g" },
+        { "name": "Spring onions", "amount": "2" },
+        { "name": "Sesame seeds", "amount": "1 tsp" }
+      ],
+      "instructions": [
+        "Mix soy sauce, honey, sesame oil, minced garlic, and grated ginger to make teriyaki sauce.",
+        "Marinate salmon in half the sauce for 15 minutes.",
+        "Cook jasmine rice according to package instructions.",
+        "Heat a non-stick pan over medium-high heat. Cook salmon skin-side down for 4 minutes.",
+        "Flip and pour remaining sauce over. Cook another 3 minutes until caramelized.",
+        "Serve over rice, garnished with sliced spring onions and sesame seeds."
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Margherita Pizza",
+      "description": "A classic Neapolitan pizza with a thin crispy base, rich tomato sauce, fresh mozzarella, and fragrant basil.",
+      "servings": 2,
+      "isFeatured": true,
+      "imageUrl": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800",
+      "dietaryAttributes": ["Vegetarian"],
+      "ingredients": [
+        { "name": "Pizza dough", "amount": "300g" },
+        { "name": "Tomato sauce", "amount": "4 tbsp" },
+        { "name": "Fresh mozzarella", "amount": "150g" },
+        { "name": "Fresh basil", "amount": "handful" },
+        { "name": "Olive oil", "amount": "1 tbsp" },
+        { "name": "Garlic clove", "amount": "1" },
+        { "name": "Salt", "amount": "to taste" }
+      ],
+      "instructions": [
+        "Preheat oven to 250°C with a pizza stone or baking tray inside.",
+        "Stretch pizza dough into a thin 30cm circle on a floured surface.",
+        "Rub crust with a cut garlic clove and drizzle with olive oil.",
+        "Spread tomato sauce evenly, leaving a 2cm border.",
+        "Tear mozzarella and scatter evenly over the sauce.",
+        "Bake for 8-10 minutes until crust is golden and cheese is bubbling.",
+        "Top with fresh basil leaves and a final drizzle of olive oil. Serve hot."
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Vegetable Stir Fry",
+      "description": "A quick and vibrant stir fry packed with crunchy vegetables in a savory ginger-soy sauce, served over noodles.",
+      "servings": 2,
+      "isFeatured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800",
+      "dietaryAttributes": ["Vegan", "Dairy-Free"],
+      "ingredients": [
+        { "name": "Egg noodles", "amount": "200g" },
+        { "name": "Broccoli", "amount": "1 cup" },
+        { "name": "Bell pepper", "amount": "1" },
+        { "name": "Snap peas", "amount": "1 cup" },
+        { "name": "Carrot", "amount": "1" },
+        { "name": "Soy sauce", "amount": "3 tbsp" },
+        { "name": "Sesame oil", "amount": "1 tbsp" },
+        { "name": "Fresh ginger", "amount": "1 tsp" },
+        { "name": "Garlic cloves", "amount": "2" },
+        { "name": "Spring onions", "amount": "2" }
+      ],
+      "instructions": [
+        "Cook noodles according to package instructions. Drain and set aside.",
+        "Mix soy sauce, sesame oil, minced garlic, and grated ginger in a small bowl.",
+        "Heat a wok or large pan over high heat until smoking.",
+        "Add vegetables in order of cooking time: carrots first, then broccoli, pepper, and snap peas.",
+        "Stir fry for 4-5 minutes keeping vegetables crisp.",
+        "Add noodles and sauce, toss everything together for 2 minutes.",
+        "Serve topped with sliced spring onions and a drizzle of sesame oil."
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Shakshuka",
+      "description": "Eggs poached in a rich, spiced tomato and pepper sauce — a Middle Eastern classic that works for any meal of the day.",
+      "servings": 2,
+      "isFeatured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1590412200988-a436970781fa?w=800",
+      "dietaryAttributes": ["Vegetarian", "Gluten-Free", "Dairy-Free"],
+      "ingredients": [
+        { "name": "Eggs", "amount": "4" },
+        { "name": "Canned tomatoes", "amount": "400g" },
+        { "name": "Red bell pepper", "amount": "1" },
+        { "name": "Onion", "amount": "1" },
+        { "name": "Garlic cloves", "amount": "3" },
+        { "name": "Ground cumin", "amount": "1 tsp" },
+        { "name": "Smoked paprika", "amount": "1 tsp" },
+        { "name": "Chilli flakes", "amount": "½ tsp" },
+        { "name": "Olive oil", "amount": "2 tbsp" },
+        { "name": "Fresh parsley", "amount": "handful" }
+      ],
+      "instructions": [
+        "Heat olive oil in a wide pan over medium heat. Sauté diced onion for 5 minutes.",
+        "Add sliced bell pepper and cook another 3 minutes.",
+        "Stir in minced garlic, cumin, paprika, and chilli flakes. Cook 1 minute.",
+        "Pour in canned tomatoes, crushing them with a spoon. Simmer 10 minutes.",
+        "Make 4 wells in the sauce and crack an egg into each.",
+        "Cover and cook on low heat for 5-7 minutes until whites are set but yolks are runny.",
+        "Garnish with fresh parsley and serve with crusty bread."
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Caesar Salad",
+      "description": "Crisp romaine lettuce with homemade Caesar dressing, crunchy croutons, and shaved parmesan — a timeless classic.",
+      "servings": 2,
+      "isFeatured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=800",
+      "dietaryAttributes": ["High Protein"],
+      "ingredients": [
+        { "name": "Romaine lettuce", "amount": "1 head" },
+        { "name": "Parmesan cheese", "amount": "50g" },
+        { "name": "Sourdough bread", "amount": "2 slices" },
+        { "name": "Chicken breast", "amount": "200g" },
+        { "name": "Garlic clove", "amount": "1" },
+        { "name": "Lemon juice", "amount": "2 tbsp" },
+        { "name": "Dijon mustard", "amount": "1 tsp" },
+        { "name": "Worcestershire sauce", "amount": "1 tsp" },
+        { "name": "Olive oil", "amount": "3 tbsp" },
+        { "name": "Anchovy paste", "amount": "1 tsp" }
+      ],
+      "instructions": [
+        "Tear sourdough into chunks and toss with olive oil and garlic. Bake at 180°C for 10 minutes until golden.",
+        "Season chicken breast and grill or pan-fry for 6 minutes each side. Slice thinly.",
+        "Whisk together lemon juice, mustard, Worcestershire sauce, anchovy paste, and olive oil for dressing.",
+        "Chop romaine into large pieces and add to a bowl.",
+        "Toss with dressing, croutons, and sliced chicken.",
+        "Finish with shaved parmesan and cracked black pepper."
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Banana Oat Muffins",
+      "description": "Moist, naturally sweetened banana oat muffins — perfect for meal prep and a healthy grab-and-go breakfast.",
+      "servings": 6,
+      "isFeatured": false,
+      "imageUrl": "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=800",
+      "dietaryAttributes": ["Vegetarian", "Dairy-Free"],
+      "ingredients": [
+        { "name": "Ripe bananas", "amount": "3" },
+        { "name": "Rolled oats", "amount": "200g" },
+        { "name": "Eggs", "amount": "2" },
+        { "name": "Honey", "amount": "3 tbsp" },
+        { "name": "Coconut oil", "amount": "2 tbsp" },
+        { "name": "Baking powder", "amount": "1 tsp" },
+        { "name": "Cinnamon", "amount": "1 tsp" },
+        { "name": "Vanilla extract", "amount": "1 tsp" },
+        { "name": "Walnuts", "amount": "50g" }
+      ],
+      "instructions": [
+        "Preheat oven to 175°C. Line a muffin tin with paper cases.",
+        "Mash bananas thoroughly in a large bowl.",
+        "Add eggs, honey, melted coconut oil, and vanilla. Mix well.",
+        "Stir in rolled oats, baking powder, and cinnamon until combined.",
+        "Fold in roughly chopped walnuts.",
+        "Divide batter evenly into 6 muffin cases.",
+        "Bake for 20-22 minutes until a toothpick inserted comes out clean. Cool before serving."
+      ]
+    }
+  ]
+}
