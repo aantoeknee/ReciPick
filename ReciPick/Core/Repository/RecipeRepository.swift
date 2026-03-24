@@ -18,7 +18,7 @@ protocol RecipeRepositoryProtocol {
 class RecipeRepository: RecipeRepositoryProtocol {
     
     func loadRecipes() async throws -> [Recipe] {
-        try? await Task.sleep(for: .milliseconds(100)) // to mimic api call
+        try? await Task.sleep(for: .milliseconds(500)) // to mimic api call
         
         guard let url = Bundle.main.url(forResource: "recipes", withExtension: "json")
         else { return [] }
@@ -33,7 +33,7 @@ class RecipeRepository: RecipeRepositoryProtocol {
     // Filtering order: Attribute -> isVegetarian -> Servings -> Ingredients -> Search Key
     
     func searchRecipes(query: FilterSearchQueryModel) async throws -> [Recipe] {
-        try? await Task.sleep(for: .milliseconds(100)) // to mimic api call
+        try? await Task.sleep(for: .milliseconds(500)) // to mimic api call
         
         let all = try await loadRecipes()
 
