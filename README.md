@@ -13,9 +13,9 @@ A native iOS recipe browsing app built with Swift and SwiftUI.
 ## Setup Instructions
 
 ### Requirements
-- Xcode 15.0+
-- iOS 16.0+
-- Swift 5.9+
+- Xcode 26.0+
+- iOS 26.0+
+- Swift 6.0+
 
 ### Getting Started
 
